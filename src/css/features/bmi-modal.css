@@ -1,0 +1,188 @@
+.bmi__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 990;
+  padding: 15px;
+  visibility: visible;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.is-hidden .bmi__wrapper {
+  visibility: hidden;
+  opacity: 0.3;
+  transform: translate(-75%, -90%) scale(3);
+}
+
+.bmi__wrapper {
+  position: relative;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 20px;
+  visibility: visible;
+  opacity: 1;
+  border-radius: 15px;
+  background-color: var(--color-black);
+  box-shadow: 0 28px 42px rgba(0, 0, 0, 0.38), 0 20px 20px rgba(0, 0, 0, 0.33);
+}
+
+@media screen and (max-width: 375px) {
+  .bmi__wrapper {
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .bmi__wrapper {
+    width: 335px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bmi__wrapper {
+    margin-top: 20vh;
+    width: 704px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bmi__content-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+
+.bmi__modal-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  stroke: var(--color-white);
+  transition: all var(--transition-dur-and-func);
+}
+
+.bmi__modal-close-btn:hover {
+  transform: rotate(270deg);
+}
+
+.bmi__bmi-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-white);
+}
+
+.bmi__bmi-pic {
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .bmi__bmi-pic {
+    width: 270px;
+    margin: 0;
+  }
+}
+
+.bmi__calc-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .bmi__calc-wrap {
+    width: 350px;
+  }
+}
+
+.bmi__label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: rgba(244, 244, 244, 0.4);
+}
+
+.bmi__input {
+  padding: 5px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  border-radius: 30px;
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  background-color: transparent;
+}
+
+.bmi__input-result {
+  margin-top: 10px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: center;
+  color: var(--color-white);
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.bmi__btn {
+  border-radius: 30px;
+  background: var(--color-white);
+  color: var(--color-black);
+  border: none;
+  padding: 10px 20px;
+  margin-top: 14px;
+  font-size: 14px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all var(--transition-dur-and-func);
+}
+
+.bmi__btn:hover {
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+.bmi__info-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--color-white);
+}
+
+@media screen and (min-width: 768px) {
+  .bmi__info-text {
+    text-align: center;
+  }
+}
+
+.bmi__info-result {
+  font-size: 20px;
+}

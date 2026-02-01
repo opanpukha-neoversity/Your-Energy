@@ -1,0 +1,60 @@
+.scroll__go-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  display: none;
+  padding: 2px 4px;
+  border: none;
+  background: no-repeat scroll #242424;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  opacity: 0.8;
+  cursor: pointer;
+  padding: 7px;
+  margin: 0;
+  z-index: 90;
+}
+
+@media screen and (min-width: 768px) {
+  .scroll__go-top {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.scroll__go-top:hover,
+.scroll__go-top:focus {
+  background: #f4f4f4;
+  border: 2px solid #242424;
+}
+
+.scroll__go-top--show {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .scroll__go-top {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+.scroll__icon {
+  width: 13px;
+  height: 13px;
+  fill: #f4f4f4;
+}
+
+@media screen and (min-width: 768px) {
+  .scroll__icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.scroll__go-top:hover .scroll__icon,
+.scroll__go-top:focus .scroll__icon {
+  fill: #242424;
+}
