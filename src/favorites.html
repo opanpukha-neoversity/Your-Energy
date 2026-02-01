@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Elevate your fitness journey with our sports app! Dive into a world of dynamic workouts, personalized exercises, and a comprehensive inventory of fitness gear. Whether you're a seasoned athlete or just starting, our app is your go-to destination for effective sports exercises and top-notch equipment. Achieve your fitness goals in style, download now!"
+      content="Elevate your fitness journey with our sports app! Dive into a world of dynamic workouts."
     />
     <link
       rel="stylesheet"
@@ -21,18 +21,19 @@
     </header>
 
     <main>
-      <load ="partials/sections/hero.html" />
-      <load ="partials/sections/exercises.html" />
-      <load ="partials/modals/modal-bmi.html" />
+      <load ="partials/sections/favorites-main.html" />
     </main>
 
     <footer>
-      <load ="partials/layout/footer.html" />
       <load ="partials/modals/modal-exercise.html" />
       <load ="partials/modals/modal-rating.html" />
-      <load ="partials/ui/scroll-up.html" />
     </footer>
 
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="./js/features/header/mobile-menu.js"></script>
+    <script type="module" src="./js/features/hero/quote.js"></script>
+    <script type="module" src="./js/features/favorites/favorites-page.js"></script>
+    <script type="module" src="./js/features/favorites/favorites-local-add.js"></script>
+    <script type="module" src="./js/features/favorites/favorites-local-remove.js"></script>
+    <script type="module" src="./js/features/exercises/modal-exercise.js"></script>
   </body>
 </html>
