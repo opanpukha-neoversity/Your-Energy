@@ -2,127 +2,596 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Your-Energy/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <meta
+      name="description"
+      content="Elevate your fitness journey with our sports app! Dive into a world of dynamic workouts, personalized exercises, and a comprehensive inventory of fitness gear. Whether you're a seasoned athlete or just starting, our app is your go-to destination for effective sports exercises and top-notch equipment. Achieve your fitness goals in style, download now!"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <title>Your Energy</title>
     <script type="module" crossorigin src="/Your-Energy/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/Your-Energy/assets/styles-DvPDDfy5.css">
+    <link rel="modulepreload" crossorigin href="/Your-Energy/assets/vendor-CK1Rzdhu.js">
+    <link rel="modulepreload" crossorigin href="/Your-Energy/assets/quote-DYA0pEf7.js">
+    <link rel="stylesheet" crossorigin href="/Your-Energy/assets/vendor-DnveWo0P.css">
+    <link rel="stylesheet" crossorigin href="/Your-Energy/assets/quote-2zcCe1oD.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/Your-Energy/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+    <header>
+      <div class="nav-container">
+  <div class="header-container" id="header__top">
+    <a class="header__logo" href="./index.html">
+      <svg width="132" height="24">
+        <use href="/Your-Energy/assets/sprite-Da3IUN7k.svg#icon-Logo"></use>
+      </svg>
+      <span class="header__logo-text">Your Energy</span>
+    </a>
+    <nav class="header__nav">
+      <a id="homeButton" class="nav-btn" href="./index.html">Home</a>
+      <a id="favoritesButton" class="nav-btn" href="./favorites.html"
+        >Favorites</a
+      >
+    </nav>
+
+    <ul class="header__socials-list">
+      <li class="header__socials-item">
+        <a
+          href="https://www.facebook.com/goITclub/"
+          class="header__socials-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="facebook icon"
+        >
+          <svg class="header__socials-icon" width="7" height="17">
+            <use href="/Your-Energy/assets/sprite-Da3IUN7k.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header__socials-item">
+        <a
+          href="https://www.instagram.com/goitclub/"
+          class="header__socials-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="instagram icon"
+        >
+          <svg class="header__socials-icon" width="24" height="24">
+            <use href="/Your-Energy/assets/sprite-Da3IUN7k.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header__socials-item">
+        <a
+          href="https://www.youtube.com/c/GoIT"
+          class="header__socials-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="youtube icon"
+        >
+          <svg class="header__socials-icon" width="24" height="24">
+            <use href="/Your-Energy/assets/sprite-Da3IUN7k.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <button
+      class="menu-open__button js-open-menu"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      data-menu-open-btn
+    >
+      <svg
+        class="menu-open__icon"
+        width="32"
+        height="32"
+        stroke="var(--color-black)"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        role="img"
+      >
+        <use
+          class="menu-open__use"
+          href="/Your-Energy/assets/sprite-Da3IUN7k.svg#icon-align-justify"
+        ></use>
+      </svg>
+      <span class="burger-btn">burger</span>
+    </button>
+  </div>
+</div>
+
+<div class="backdrop is-hidden" data-menu-backdrop>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button
+      type="button"
+      class="menu-close__button js-close-menu"
+      data-menu-close-btn
+    >
+      <svg class="menu-close__icon" width="32" height="32">
+        <use href="./sprite.svg#icon-x-close"></use>
+      </svg>
+    </button>
+
+    <nav class="menu__nav">
+      <ul class="menu__nav-list">
+        <li class="menu__nav-item">
+          <a class="menu__nav-link" href="./index.html">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li class="menu__nav-item">
+          <a class="menu__nav-link" href="./favorites.html">Favorites</a>
         </li>
       </ul>
     </nav>
-  </div>
-</header>
 
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/Your-Energy/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
-    </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
-  </div>
-</section>
-
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
+    <ul class="menu__socials-list">
+      <li class="menu__socials-item">
         <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
+          class="menu__socials-link"
+          href="https://www.facebook.com/goITclub/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="facebook icon"
         >
-          HTML Inject
+          <svg class="menu__socials-icon" width="7" height="17">
+            <use href="/Your-Energy/assets/sprite-Da3IUN7k.svg#icon-facebook"></use>
+          </svg>
         </a>
       </li>
-      <li class="badges-item">
+      <li class="menu__socials-item">
         <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
+          class="menu__socials-link"
+          href="https://www.instagram.com/goitclub/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="instagram icon"
         >
-          Full Reload
+          <svg class="menu__socials-icon" width="24" height="24">
+            <use href="/Your-Energy/assets/sprite-Da3IUN7k.svg#icon-instagram"></use>
+          </svg>
         </a>
       </li>
-      <li class="badges-item">
+
+      <li class="menu__socials-item">
         <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
+          class="menu__socials-link"
+          href="https://www.youtube.com/c/GoIT"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="youtube icon"
         >
-          Sort Media Queries
+          <svg class="menu__socials-icon" width="24" height="24">
+            <use href="/Your-Energy/assets/sprite-Da3IUN7k.svg#icon-youtube"></use>
+          </svg>
         </a>
       </li>
     </ul>
   </div>
-</article>
+</div>
+    </header>
+
+    <main>
+      <section class="section">
+  <div class="container">
+    <div class="hero">
+      <div class="hero__icon-title">
+        <svg id="mySVG" class="hero__icon" width="38" height="38">
+          <use href="/Your-Energy/assets/sprite-Da3IUN7k.svg#icon-sun"></use>
+        </svg>
+        <h1 class="hero__title">
+          Get <span class="hero__title-part">Body</span> in <br />shape, Stay
+          healthy
+        </h1>
+        <img
+          class="hero__pic"
+          src="data:image/jpeg;base64,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"
+          srcset="/Your-Energy/assets/hero-image-small-desktop@2x-B-XnZsOG.jpg 2x"
+          alt="young women doing fitness outdoors together"
+          width="765"
+          height="400"
+        />
+      </div>
+      <p class="hero__subtitle">
+        Transform your physique and embrace a healthier lifestyle.
+      </p>
+
+      <picture class="hero__image">
+        <source
+          media="(max-width: 767px)"
+          srcset="/Your-Energy/assets/hero-image-mobile-Dv07EqEb.jpg 1x, /Your-Energy/assets/hero-image-mobile@2x-D7FzcrTZ.jpg 2x"
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="/Your-Energy/assets/hero-image-mobile-Dv07EqEb.jpg 1x, /Your-Energy/assets/hero-image-mobile@2x-D7FzcrTZ.jpg 2x"
+        />
+
+        <source
+          media="(min-width: 768px) and (max-width: 1439px)"
+          srcset="/Your-Energy/assets/hero-image-tablet-BH2EcZMo.jpg 1x, /Your-Energy/assets/hero-image-tablet@2x-CC-HlR0k.jpg 2x"
+        />
+        <source
+          media="(min-width: 1440px)"
+          srcset="/Your-Energy/assets/hero-image-desktop-rbNPpY8H.jpg 1x, /Your-Energy/assets/hero-image-desktop@2x-kc4MWjEG.jpg 2x"
+        />
+        
+        <img
+          src="/Your-Energy/assets/hero-image-mobile-Dv07EqEb.jpg"
+          alt="women sportswear working out outdoors"
+          width="335" 
+          height="380"
+          fetchpriority="high"
+        />
+      </picture>
+
+      <ul class="hero__hashtags">
+        <li class="hero__hashtag">
+          <a
+            class="hero__hashtag-text"
+            href="https://www.instagram.com/explore/tags/sport/"
+            target="_blank"
+            >#Sport</a
+          >
+        </li>
+        <li class="hero__hashtag">
+          <a
+            class="hero__hashtag-text"
+            href="https://www.instagram.com/explore/tags/healthy/"
+            target="_blank"
+            >#Healthy</a
+          >
+        </li>
+        <li class="hero__hashtag">
+          <a
+            class="hero__hashtag-text"
+            href="https://www.instagram.com/explore/tags/workout/"
+            target="_blank"
+            >#Workout</a
+          >
+        </li>
+        <li class="hero__hashtag">
+          <a
+            class="hero__hashtag-text"
+            href="https://www.instagram.com/explore/tags/diet/"
+            target="_blank"
+            >#Diet</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+      <section class="section">
+  <div class="exersices__container container">
+    <h2 class="exersices__title">
+      Exercises<span class="exersices__span hidden"><span>&sol;</span></span>
+      <a class="exersices__text hidden"></a>
+    </h2>
+    <div class="exersices__search-btn-wrap">
+      <form class="search__form hidden">
+        <input class="search__input" type="text" placeholder="Search" />
+        <button class="search__button" type="button">
+          <svg class="search__icon" width="18" height="18">
+            <use href="/Your-Energy/assets/sprite-Da3IUN7k.svg#icon-search"></use>
+          </svg>
+        </button>
+      </form>
+      <ul class="exersices__list">
+        <li>
+          <button class="exercises__btn btnFilters active" type="button">
+            Muscles
+          </button>
+        </li>
+        <li>
+          <button class="exercises__btn btnFilters" type="button">
+            Body parts
+          </button>
+        </li>
+        <li>
+          <button class="exercises__btn btnFilters" type="button">
+            Equipment
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="quote-filters__container container">
+    <div class="aside__container">
+      <ul class="aside__container-list">
+        <li>
+          <div class="quote__container">
+            <div class="aside-svg__circle">
+              <svg class="aside__svg" width="20" height="20">
+                <use href="/Your-Energy/assets/sprite-Da3IUN7k.svg#icon-pedastrian"></use>
+              </svg>
+            </div>
+            <h3 class="quote__title">Quote of the day</h3>
+            <svg class="aside__commas-svg">
+              <use href="/Your-Energy/assets/sprite-Da3IUN7k.svg#icon-inverted-commas"></use>
+            </svg>
+            <div class="aside-quote__wrapper js-quote"></div>
+          </div>
+        </li>
+        <li class="aside__nail">
+          <div class="aside__img"></div>
+          <div class="bmi__link-block">
+            <a href="../partials/modals/modal-bmi.html" class="bmi__link">BMI</a>
+            <p class="bmi__span">Calculator</p>
+          </div>
+        </li>
+        <li>
+          <div class="aside__white-card">
+            <div class="white-card-svg__wrapper">
+              <svg class="aside__white-card-svg" width="20" height="20">
+                <use href="/Your-Energy/assets/sprite-Da3IUN7k.svg#icon-gym"></use>
+              </svg>
+            </div>
+
+            <h3 class="aside__white-card-title">110 min</h3>
+            <h4 class="aside__white-card-subtitle">Daily norm of sports</h4>
+            <p class="aside__white-card-text">
+              The World Health Organization recommends at least 150 minutes of
+              moderate-intensity aerobic physical activity throughout the week
+              for adults aged 18-64. However, what happens if we adjust that
+              number to 110 minutes every day? While it might seem like a high
+              number to hit, dedicating 110 minutes daily to sporting activities
+              may offer unparalleled benefits to physical health, mental
+              well-being, and overall quality of life.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="filters__container">
+      <ul class="filters__list js-list"></ul>
+      <div id="pagination-numbers"></div>
+    </div>
+  </div>
+</section>
+      <div class="bmi__backdrop is-hidden">
+  <div class="bmi__wrapper">
+    <button class="bmi__modal-close-btn" type="button">
+      <svg class="bmi__modal-close-icon" width="16" height="16">
+        <use href="./sprite.svg#icon-cross-closed"></use>
+      </svg>
+    </button>
+    <h2 class="bmi__bmi-title">
+      <span class="bmi__bmi-title-part">Body</span> Mass Index (BMI) Calculator
+    </h2>
+    <div class="bmi__content-wrap">
+      <div class="bmi__img-wrap">
+        <img
+          class="bmi__bmi-pic"
+          src="/Your-Energy/assets/hero-image-bmi-xqW6jZ98.jpg"
+          srcset="/Your-Energy/assets/hero-image-bmi@2x-B_Cw_Typ.jpg 2x"
+          alt="young woman working out alone outdoors"
+        />
+      </div>
+
+      <div class="bmi__calc-wrap">
+        <label class="bmi__label">
+          Your Height (cm):
+          <input
+            type="number"
+            class="bmi__input"
+            id="height"
+            value="180"
+            placeholder="Enter your height in cm"
+        /></label>
+        <label class="bmi__label"
+          >Your Weight (kg):
+          <input
+            type="number"
+            class="bmi__input"
+            id="weight"
+            value="80"
+            placeholder="Enter your weight in kg"
+        /></label>
+        <button class="bmi__btn" id="btn">Compute BMI</button>
+      </div>
+    </div>
+    <input disabled type="text" class="bmi__input-result" id="bmi-result" />
+
+    <h3 class="bmi__info-text">
+      Weight Condition:
+      <span id="weight-condition" class="bmi__info-result"></span>
+    </h3>
+  </div>
+</div>
 
     </main>
 
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
+    <footer>
+      <div class="footer__background">
+  <div class="footer__container container">
+    <div class="footer__left-wrap">
+      <a class="logo" id="logo" href="/index.html">
+        <svg
+          class="footer__logo logo"
+          width="132"
+          height="24"
+          aria-label="scroll down icon"
+        >
+          <use href="/Your-Energy/assets/sprite-Da3IUN7k.svg#icon-logo"></use>
+        </svg>
       </a>
-    </p>
+      <ul class="socials__list">
+        <li>
+          <a
+            class="socials__link link"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="facebook icon"
+          >
+            <svg
+              class="socials__icon socials__icon-footer"
+              width="7"
+              height="17"
+            >
+              <use href="/Your-Energy/assets/sprite-Da3IUN7k.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="socials__link link"
+            href="https://www.instagram.com/goitclub/"
+            aria-label="instagram icon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              class="socials__icon socials__icon-footer"
+              width="24"
+              height="24"
+            >
+              <use href="/Your-Energy/assets/sprite-Da3IUN7k.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="socials__link link"
+            href="https://www.youtube.com/c/GoIT"
+            aria-label="youtube icon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              class="socials__icon socials__icon-footer"
+              width="24"
+              height="24"
+            >
+              <use href="/Your-Energy/assets/sprite-Da3IUN7k.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__right-wrap">
+      <h2 class="footer__title">
+        Transforming your <span class="accent-text">body</span> shape with us
+      </h2>
+      <form class="subscribe__form" id="subscribeForm">
+        <h3 class="subscribe__form-title">
+          Subscribe and learn about new exercises!
+        </h3>
+        <input
+          class="subscribe__form-input"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <button class="subscribe__form-btn" type="submit" id="subscribeBtn">
+          Send
+        </button>
+      </form>
+    </div>
+    <div class="footer__text-outer-wrap">
+      <div>
+        <p class="footer__text">Your Energy. All rights reserved.</p>
+      </div>
+      <div class="footer__text-inner-wrap">
+        <p class="footer__text privacy-policy__text">
+          <span>Privacy Policy</span><span>&sol;</span
+          ><span>Terms of Service</span>
+        </p>
+        <p class="footer__text">©2023</p>
+      </div>
+    </div>
   </div>
-</footer>
+</div>
 
+      <div class="overlay hidden">
+  <div class="modal-exercises hidden"></div>
+</div>
+
+      <div class="modal-rating overlay is-hidden">
+  <div class="rating-container">
+    <button type="button" class="rating-close-btn">
+      <svg class="rating-icon-close" width="12" height="12">
+        <use href="../img/sprite.svg#icon-menu-mobile-close"></use>
+      </svg>
+    </button>
+
+    <div class="rating-wrapper">
+      <form action="#" class="form form_margin">
+        <div class="form__item">
+          <div class="form__label">Rating</div>
+          <div class="rating rating_set">
+            <div class="rating__value">0.0</div>
+            <div class="rating__body">
+              <div class="rating__active"></div>
+              <div class="rating__items">
+                <input
+                  type="radio"
+                  class="rating__item"
+                  value="1"
+                  name="rating"
+                />
+                <input
+                  type="radio"
+                  class="rating__item"
+                  value="2"
+                  name="rating"
+                />
+                <input
+                  type="radio"
+                  class="rating__item"
+                  value="3"
+                  name="rating"
+                />
+                <input
+                  type="radio"
+                  class="rating__item"
+                  value="4"
+                  name="rating"
+                />
+                <input
+                  type="radio"
+                  class="rating__item"
+                  value="5"
+                  name="rating"
+                />
+              </div>
+            </div>
+          </div>
+
+          <input
+            class="rating-email"
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+
+          <textarea
+            class="rating-comment"
+            name="comment"
+            placeholder="Your comment"
+          ></textarea>
+        </div>
+        <button class="form__btn btn" type="submit" disabled>Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+      <button class="scroll__go-top" type="button">
+  <svg class="scroll__icon" aria-label="go-top">
+<button class="scroll__go-top" type="button" aria-label="Scroll to top">
+  <svg class="scroll__icon" aria-hidden="true">
+    <use href="/Your-Energy/assets/sprite-Da3IUN7k.svg#icon-arrow-top-right-100px"></use>
+  </svg>
+</button>
+</button>
+    </footer>
 
   </body>
 </html>
